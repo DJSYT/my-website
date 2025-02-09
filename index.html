@@ -1,53 +1,184 @@
 <!DOCTYPE html>
-</body><button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-</html><script>
-    function toggleDarkMode() {
-        document.body.classList.toggle("dark-mode");
-    }
-
-</script>
-
-
-<marquee>Welcome to DJS_YT★ Awesome Website!</marquee>
-<html>
+<html lang="en">
 <head>
-    <title>My Social Links</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Profile</title>
+    <style>
+        /* Loader styles */
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            z-index: 9999;
+            transition: opacity 1s ease-out;
+        }
+        
+        /* Hide content while loading */
+        #content {
+            display: none;
+        }
+    </style>
 </head>
+<body>
 
-</script>
- Hello Everybudy I am a begener And its my fast creation.
+    <!-- Loader Screen -->
+    <div id="loader">Loading...</div>
 
-    <header>
-    </header>
+    </div>
 
-    <section><h2>Contact Me</h2>
-<form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-</form>
+    <script>
+        // Hide the loader and show the content after 2 seconds
+        setTimeout(function() {
+            document.getElementById("loader").style.opacity = "0";
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 1000); // Wait for fade effect
+        }, 2000);
+    </script>
 
-        <h2>Connect with Me</h2>
-        <p>Check out my YouTube channel, Discord server, and Roblox profile!</p>
+</body>
+</html>
 
-        <div class="links">
-            <a href="https://youtube.com/@patsim_99?si=GJ8F8gDgHT9VOPw1" target="_blank">📺 YouTube</a>
-            <a href="https://discord.gg/UkqZgqba" target="_blank">💬 Discord</a>
-            <a href="https://www.roblox.com/users/5303639741/profile" target="_blank">🎮 Roblox</a>
-        </div>
-    </section><h2>About Me</h2>
-<p>Hello! I love gaming and coding. Subscribe me on YouTube, Discord, and Roblox! If you are Mahabir 🖕<p>    <img src="profile.jpg" alt="My Profile Picture" class="profile-img">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millionaire's Roblox Profile</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-    <footer>
-    </footer>
-    </section><h2>Watch My Latest Video</h2>
-  <button id="topBtn" onclick="scrollToTop()">🔝 Back to Top</button>
-  <script>
-    function scrollToTop() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-</script>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
 
-<iframe width="300" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background: #121212;
+            color: #fff;
+        }
+
+        /* Profile Card */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+        }
+
+        /* Dark Mode Card */
+        body.dark-mode .card {
+            background: #1e1e1e;
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* Username */
+        .username {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        /* Role */
+        .role {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 15px;
+        }
+
+        /* Achievements */
+        .achievements {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .profile-link {
+            background: #007bff;
+            color: white;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .profile-link:hover {
+            background: #0056b3;
+        }
+
+        .toggle-btn {
+            background: #ff9800;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .toggle-btn:hover {
+            background: #e68900;
+        }
+
+    </style>
+</head>
+<body class="light-mode">
+
+    <div class="card">
+        <img src="https://www.roblox.com/headshot-thumbnail/image?userId=5080669445&width=420&height=420&format=png" 
+            alt="Millionaire's Profile Picture" 
+            class="profile-img">
+        <h1 class="username">Millionaire</h1>
+        <p class="role">Management Professional</p>
+        <p class="achievements">🌟 Contributor to over <strong>6 million</strong> visits</p>
+        <a href="https://www.roblox.com/users/5080669445/profile" class="btn profile-link" target="_blank">View Roblox Profile</a>
+        <button class="btn toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button>
+    </div>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
+</body>
+</html>
